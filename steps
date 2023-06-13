@@ -1,0 +1,30 @@
+Prepare the Private Key
+Method 1: The Auto-activate feature
+Save the file to your device.
+Extract the Private Key file from the downloaded archive file.
+
+
+Method 2: The CSR code was generated elsewhere
+Then, paste the Private Key:
+After that, select Format >> Make Plain Text:
+Then, select File >> Save:
+
+
+Download the certificate files
+Extract the files from the downloaded archive. The archive should contain the certificate in 2 formats: PEM (.crt and .ca-bundle) and PKCS#7 (.p7b):
+Create the PFX file
+To do that, open the online converter and select the PKCS#7 to PKCS#12 tab
+After that, upload both files: the PKCS#7-type certificate file and the Private Key file.
+Important note: Make sure to set a password for the file. 
+Finally, click Convert to confirm the action.
+In the pop-up notification, click Download to save the converted certificate on your device. After that, extract the file from the downloaded archive.
+
+
+Import the PFX file
+Double-click the file to open the certificate import wizard or right-click on the file and select “Install PFX”.
+Select Local Machine to make the certificate accessible from all of the accounts in the system. Then, click Next.
+In the following prompt, click Next once again to confirm the file location.
+Enter the password you set for the PFX file. Make sure to tick off the “Mark this key as exportable” option, so that the Private Key can be exported later.
+In the next prompt, you can choose the automatic option to let the Certificate Import Wizard take care of it. Click Next to proceed.
+Then, click Finish to confirm the certificate import.
+The following window should appear after that:
